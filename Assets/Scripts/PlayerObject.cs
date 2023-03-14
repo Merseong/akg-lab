@@ -8,6 +8,13 @@ public class PlayerObject : NetworkBehaviour
     [SerializeField] private GameObject stoneObject;
     [SerializeField] private StoneBehaviour playerStone;
 
+    // public void Start()
+    // {
+    //     if(!IsLocalPlayer) return;
+        
+    //     Time.timeScale = Time.timeScale * .1f;
+    // }
+
     public void Update()
     {
         if(!IsLocalPlayer) return;
