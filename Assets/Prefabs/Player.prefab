@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7511458272062612133}
-  - component: {fileID: 6051904641396818970}
+  - component: {fileID: -320327651450415700}
+  - component: {fileID: -8008015955925194094}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -30,9 +31,23 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6051904641396818970
+--- !u!114 &-320327651450415700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7032224554161716297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d254614f4aeb2f4782b4eda162e1820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stoneObject: {fileID: 321655082547586240, guid: 83c0cad7462291441a12d01778649db2,
+    type: 3}
+--- !u!114 &-8008015955925194094
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
