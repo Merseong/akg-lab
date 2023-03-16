@@ -1,0 +1,29 @@
+{
+    "name": "Scripts",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3b8ed52f1b5c64994af4c4e0aa4b6c4b",
+        "GUID:9f4f5bf029cebb64f983b7bdc29f62a1",
+        "GUID:1491147abca9d7d4bb7105af628b223e",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:0061587d97f6fd341834706c19c90efa",
+        "GUID:f2d49d9fa7e7eb3418e39723a7d3b92f",
+        "GUID:5540e30183c82e84b954c033c388e06c",
+        "GUID:fe25561d224ed4743af4c60938a59d0b",
+        "GUID:1800ae458ff5b439fb4a1aa353684cbb",
+        "GUID:03058786646e84a4587858e9302c3f41",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

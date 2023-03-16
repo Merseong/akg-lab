@@ -8,14 +8,9 @@ using VContainer;
 /// VContainer로 inject
 public class TurnController : NetworkBehaviour
 {
+    [Inject]
     private HelloWorldService helloWorldService;
     public NetworkVariable<int> timer = new NetworkVariable<int>(0);
-
-    [Inject]
-    public void Construct(HelloWorldService helloWorldService)
-    {
-        this.helloWorldService = helloWorldService;
-    }
 
     public override void OnNetworkSpawn()
     {
