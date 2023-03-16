@@ -8,7 +8,7 @@ public class TestView : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI text;
     [SerializeField]
-    private TurnManager turnManager;
+    private TurnController turnManager;
 
     // Start is called before the first frame update
     void Start()
