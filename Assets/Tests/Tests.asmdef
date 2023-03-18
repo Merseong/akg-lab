@@ -2,9 +2,19 @@
     "name": "Tests",
     "rootNamespace": "",
     "references": [
-        "UnityEngine.TestRunner",
-        "UnityEditor.TestRunner",
-        "Scripts"
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:10589bad31897774e9fc708bf914a60b",
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:3b8ed52f1b5c64994af4c4e0aa4b6c4b",
+        "GUID:9f4f5bf029cebb64f983b7bdc29f62a1",
+        "GUID:072b82e2b7c1dcf439827d3fbc4f52a1",
+        "GUID:1491147abca9d7d4bb7105af628b223e",
+        "GUID:0d0243c226d5dab4fb5d34006a1ad53b",
+        "GUID:101012598ee9f064da897a34e72947f9",
+        "GUID:0061587d97f6fd341834706c19c90efa",
+        "GUID:f2d49d9fa7e7eb3418e39723a7d3b92f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

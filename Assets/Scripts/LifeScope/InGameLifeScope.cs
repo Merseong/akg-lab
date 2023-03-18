@@ -11,6 +11,7 @@ public class InGameLifeScope : LifetimeScope
 
     protected override void Configure(IContainerBuilder builder)
     {
-        builder.RegisterComponent<TurnController>(turnController);
+        builder.RegisterComponent<TurnController>(turnController)
+            .As<ITurnController>();
     }
 }
