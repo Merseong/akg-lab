@@ -7,10 +7,11 @@ using Unity.Netcode;
 public class StoneBehaviour : NetworkBehaviour
 {
 
+
     [ServerRpc]
-    public void AddForceToStoneServerRpc(Vector2 vec)
+    public void AddForceToStoneServerRpc(Vector2 vec, float force)
     {
-        GetComponent<Rigidbody2D>().AddForce(vec * 1000f);
+        GetComponent<Rigidbody2D>().AddForce(vec * force);
     }
 
     [ServerRpc]

@@ -7,6 +7,8 @@ public class PlayerObject : NetworkBehaviour
 {
     [SerializeField] private GameObject stoneObject;
     [SerializeField] private StoneBehaviour playerStone;
+    public float forceMult = 1f;
+    NetworkVariable<float> stoneForceNetworkVar = new NetworkVariable<float>(1000f);
 
     // public void Start()
     // {
@@ -70,19 +72,19 @@ public class PlayerObject : NetworkBehaviour
 
         if(key == KeyCode.W)
         {
-            playerStone.AddForceToStoneServerRpc(Vector2.up);
+            playerStone.AddForceToStoneServerRpc(Vector2.up, stoneForceNetworkVar.Value * forceMult);
         }
         else if(key == KeyCode.A)
         {
-            playerStone.AddForceToStoneServerRpc(Vector2.right);
+            playerStone.AddForceToStoneServerRpc(Vector2.right, stoneForceNetworkVar.Value * forceMult);
         }
         else if(key == KeyCode.S)
         {
-            playerStone.AddForceToStoneServerRpc(Vector2.down);
+            playerStone.AddForceToStoneServerRpc(Vector2.down, stoneForceNetworkVar.Value * forceMult);
         }
         else if(key == KeyCode.D)
         {
-            playerStone.AddForceToStoneServerRpc(Vector2.left);
+            playerStone.AddForceToStoneServerRpc(Vector2.left, stoneForceNetworkVar.Value * forceMult);
         }
 
         if(key == KeyCode.E)
