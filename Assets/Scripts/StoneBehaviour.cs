@@ -6,19 +6,19 @@ using Unity.Netcode;
 
 public class StoneBehaviour : NetworkBehaviour
 {
-    Rigidbody Rigidbody;
+    Rigidbody2D Rigidbody;
     bool moved = false;
 
     private void Awake()
     {
-        Rigidbody = GetComponent<Rigidbody>();
+        Rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (!moved) return;
 
-        if (IsHost && Rigidbody.velocity == Vector3.zero)
+        if (IsHost && Rigidbody.velocity == Vector2.zero)
         {
             UpdateStoneClientRpc(transform.position);
             moved = false;
@@ -41,6 +41,7 @@ public class StoneBehaviour : NetworkBehaviour
     [ClientRpc]
     public void UpdateStoneClientRpc(Vector3 position)
     {
+        Debug.Log("Synced");
         transform.position = position;
     }
 }
