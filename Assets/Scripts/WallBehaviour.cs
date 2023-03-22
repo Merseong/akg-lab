@@ -22,7 +22,7 @@ public class WallBehaviour : NetworkBehaviour
     [ClientRpc]
     void DisableWallClientRpc()
     {
-        boxCollider2D.enabled = false;
-        meshRenderer.enabled = false;
+        //boxCollider2D.enabled = false;
+        //meshRenderer.enabled = false;
     }
 }

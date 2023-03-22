@@ -89,7 +89,10 @@ public class PlayerObject : NetworkBehaviour
 
         if(key == KeyCode.E)
         {
-            playerStone.StopStoneClientRpc();
+            if (playerStone == null) return;
+
+            playerStone.GetComponent<NetworkObject>().Despawn(true);
+            //playerStone.StopStoneClientRpc();
         }
 
     }
