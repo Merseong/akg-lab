@@ -8,14 +8,14 @@ public class StoneBehaviour : NetworkBehaviour
 {
 
 
-    [ServerRpc]
-    public void AddForceToStoneServerRpc(Vector2 vec, float force)
+    [ClientRpc]
+    public void AddForceToStoneClientRpc(Vector2 vec, float force)
     {
         GetComponent<Rigidbody2D>().AddForce(vec * force);
     }
 
-    [ServerRpc]
-    public void StopStoneServerRpc()
+    [ClientRpc]
+    public void StopStoneClientRpc()
     {
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;    
     }

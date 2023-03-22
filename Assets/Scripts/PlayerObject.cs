@@ -72,24 +72,24 @@ public class PlayerObject : NetworkBehaviour
 
         if(key == KeyCode.W)
         {
-            playerStone.AddForceToStoneServerRpc(Vector2.up, stoneForceNetworkVar.Value * forceMult);
+            playerStone.AddForceToStoneClientRpc(Vector2.up, stoneForceNetworkVar.Value * forceMult);
         }
         else if(key == KeyCode.A)
         {
-            playerStone.AddForceToStoneServerRpc(Vector2.right, stoneForceNetworkVar.Value * forceMult);
+            playerStone.AddForceToStoneClientRpc(Vector2.right, stoneForceNetworkVar.Value * forceMult);
         }
         else if(key == KeyCode.S)
         {
-            playerStone.AddForceToStoneServerRpc(Vector2.down, stoneForceNetworkVar.Value * forceMult);
+            playerStone.AddForceToStoneClientRpc(Vector2.down, stoneForceNetworkVar.Value * forceMult);
         }
         else if(key == KeyCode.D)
         {
-            playerStone.AddForceToStoneServerRpc(Vector2.left, stoneForceNetworkVar.Value * forceMult);
+            playerStone.AddForceToStoneClientRpc(Vector2.left, stoneForceNetworkVar.Value * forceMult);
         }
 
         if(key == KeyCode.E)
         {
-            playerStone.StopStoneServerRpc();
+            playerStone.StopStoneClientRpc();
         }
 
     }
